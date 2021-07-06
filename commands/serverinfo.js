@@ -10,7 +10,7 @@ module.exports.run = async(bot, message, args) => {
      .setThumbnail(`${message.guild.iconURL({ size: 4096 })}`)
      .setTitle(`${message.guild.name}`)
      .addField("ID:", `${message.guild.id}`)
-     .addField("Owner:", `${message.guild.owner.user.tag}`, true)
+     .addField("Owner:", "Matrixbordje#0213")
      .addField("Regio:", `${message.guild.region}`, true)
      .addField("Bots:", `${message.guild.members.cache.filter(m =>m.user.bot).size}`, true)
      .addField("Mensen:", `${message.guild.memberCount - message.guild.members.cache.filter(m =>m.user.bot).size}`, true)
