@@ -62,7 +62,7 @@ module.exports.run = async (bot, message, args) => {
                     settedParent.send(embedParent);
 
                     var ticketLog = new discord.MessageEmbed()
-                    .setTitle("Ticket, " + channel.embedParent.name)
+                    .setTitle("Ticket, " + message.channel.name)
                     .setDescription("Het ticket van " + message.channel.name + " is geopend.")
                     .setColor("#6aa75e")
                     .setFooter('Created by Tweeli.#0001');
