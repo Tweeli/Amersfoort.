@@ -26,6 +26,7 @@ module.exports.run = async (bot, message, args) => {
 
     var ticketEmbed = new discord.MessageEmbed()
         .setTitle("Hoi " + message.author.username)
+        .setDescription("Uw ticket wordt aangemaakt.")
         .setColor("#6aa75e")
         .setFooter('Created by Tweeli.#0001');
 
