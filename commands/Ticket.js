@@ -3,7 +3,7 @@ const discord = require("discord.js");
 module.exports.run = async (bot, message, args) => {
 
 
-    const categoryID = "850530980430479361";
+    const categoryID = "731530479148335157";
     var userName = message.author.username;
     var userDiscriminator = message.author.discriminator;
 
@@ -65,7 +65,7 @@ module.exports.run = async (bot, message, args) => {
                     .setDescription("Het ticket van " + message.channel.name + " is geopend.")
                     .setColor("#6aa75e")
                     .setFooter('Created by Tweeli.#0001');
-                    var logChannel = message.guild.channels.cache.find(channel => channel.id === "850539977444294686")
+                    var logChannel = message.guild.channels.cache.find(channel => channel.id === "861974224037871616")
                     if(!logChannel) return message.reply("Er is iets misgelopen.");
                     logChannel.send(ticketLog);
    
