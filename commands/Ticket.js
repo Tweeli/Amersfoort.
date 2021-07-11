@@ -65,7 +65,7 @@ module.exports.run = async (bot, message, args) => {
                     .setDescription("Het ticket van " + message.channel.name + " is geopend.")
                     .setColor("#6aa75e")
                     .setFooter('Created by Tweeli.#0001');
-                    var logChannel = message.guild.channels.cache.find(channel => channel.id === "862080078560100382")
+                    var logChannel = message.member.guild.channels.cache.find(channel => channel.id === "862080078560100382");
                     if(!logChannel) return message.reply("Er is iets misgelopen.");
                     logChannel.send(ticketLog);
    
