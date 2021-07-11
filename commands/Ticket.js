@@ -79,12 +79,12 @@ module.exports.run = async (bot, message, args) => {
                 }
             ).catch(err => {
                 message.channel.send("Er is iets misgelopen");
-                console.log(info);
+                console.log(err);
             });
         }
     ).catch(err => {
         message.channel.send("Er is iets misgelopen");
-        console.log(info);
+        console.log(err);
     });
 }
 
