@@ -67,6 +67,7 @@ module.exports.run = async (bot, message, args) => {
                     .setFooter('Created by Tweeli.#0001');
                     var logChannel = message.member.guild.channels.cache.find(channel => channel.id === "862080078560100382");
                     if(!logChannel) return message.reply("Er is iets misgelopen.");
+                       console.log(info);
                     logChannel.send(ticketLog);
    
              
